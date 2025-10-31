@@ -43,7 +43,17 @@
       margin-bottom: 10px;
       font-weight: 700;
     }
-
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border: 1px solid #3498db;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
     .header-subtitle {
       font-size: 1.1rem;
       opacity: 0.9;
@@ -137,17 +147,41 @@
 <body>
 <header>
   <div class="container">
-    <h1>亲和图展示</h1>
-    <p class="header-subtitle">学生时间管理应用项目 - 用户需求整理</p>
+    <h1>图片展示</h1>
+    <p class="header-subtitle">学生时间管理应用项目</p>
     <a href="index.html" class="back-link">← 返回项目主页</a>
   </div>
 </header>
 
 <div class="container">
+  <section>
+    <h2>各年级拖延时长分布（柱状图）</h2>
+    <div class="affinity-chart-container">
+      <img src="./images/5-1.png" alt="各年级拖延时长分布（柱状图）" width="900" height="800">
+    </div>
+  </section>
+  <section>
+    <h2>学习干扰源雷达图</h2>
+    <div class="affinity-chart-container">
+      <img src="./images/5-2.png" alt="学习干扰源雷达图" width="900" height="800">
+    </div>
+  </section>
+  <section>
+    <h2>  时间管理方法热力图</h2>
+    <div class="affinity-chart-container">
+      <img src="./images/5-3.png" alt="学习干扰源雷达图" width="900" height="800">
+    </div>
+  </section>
+  <section>
+    <h2>拖延与成绩相关性分析</h2>
+    <div class="affinity-chart-container">
+      <img src="./images/5-4.png" alt="学习干扰源雷达图" width="900" height="800">
+    </div>
+  </section>
   <section id="affinity-chart">
     <h2>亲和图</h2>
     <div class="affinity-chart-container">
-      <img src="./images/1.png" alt="亲和图" width="900" height="800">
+      <img src="./images/5-5.png" alt="亲和图" width="900" height="800">
     </div>
   </section>
 </div>
