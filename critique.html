@@ -270,7 +270,7 @@
       <ul class="problem-list">
         <li class="problem-item">
           <h4>问题：是否考虑过让用户根据自己的习惯定制拆解策略，而不是完全依赖系统自动拆解？</h4>
-          <div class="criticality criticality-high">中关键性</div>
+          <div class="criticality criticality-medium">中关键性</div>
           <div class="response-section">
             <strong>解决方案：</strong>
             <ul style="margin-left: 20px; margin-top: 10px;">
@@ -285,7 +285,8 @@
           <div class="response-section">
             <strong>解决方案：</strong>
             <ul style="margin-left: 20px; margin-top: 10px;">
-              <li>在设计之初没有考虑到部分学生可能在失败时产生额外压力，只考虑到成功时的正反馈。游戏化从奖励导向调整为温和鼓励导向，设置成就树和弱化甚至删除排行榜。以降低焦虑风险，让系统在情绪波动时更友好。</li>
+              <li>在项目设计之初没有合理设计用户界面，导致后续增加功能后信息窗口冗杂。调整后将使用分层视觉结构：将任务状态（未开始/进行中/待复习）通过颜色 + 图标 +卡片布局进行区分。
+                  采用主任务突出、次要信息折叠的方式，降低首次进入界面的认知负荷。增加用户可选添加的焦点区域，使用更突出的方式使用户在视觉上直接捕捉核心内容。</li>
             </ul>
           </div>
         </li>
@@ -293,12 +294,12 @@
     </div>
 
     <div class="problem-category">
-      <h3>类别二：交互与流程</h3>
+      <h3>类别二：视觉设计</h3>
 
       <ul class="problem-list">
         <li class="problem-item">
-          <h4>问题：否考虑过用户在长期依赖系统自动规划后，失去自我规划能力？</h4>
-          <div class="criticality criticality-medium">低关键性</div>
+          <h4>问题：界面信息密度过高，用户一眼无法判断当前任务状态，是否考虑过一些密度更低的方案？</h4>
+          <div class="criticality criticality-low">低关键性</div>
           <div class="response-section">
             <strong>解决方案：</strong>
             <ul style="margin-left: 20px; margin-top: 10px;">
@@ -308,6 +309,18 @@
           </div>
         </li>
       </ul>
+        <ul class="problem-list">
+            <li class="problem-item">
+                <h4>问题：为么用视觉色彩缺乏统一系统，而不使用更丰富的色彩体系？</h4>
+                <div class="criticality criticality-high">高关键性</div>
+                <div class="response-section">
+                    <strong>解决方案：</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>在系统设计之初没有很好的设计色彩系统，后续版本会引入统一的主题色系统，在主色、强调色、状态色上提供用户多套可选的主题色彩，允许用户根据偏好切换。同时，减少饱和高、刺激性强的颜色，优先使用柔和、中性的色彩基调。</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
 
     <div class="problem-category">
@@ -315,34 +328,22 @@
 
       <ul class="problem-list">
         <li class="problem-item">
-          <h4>问题：是否考虑过提醒频率过高会让学生产生抵触？为什么不用更温和、不会造成紧迫感的反馈方式？</h4>
-          <div class="criticality criticality-medium">高关键性</div>
+          <h4>问题：提醒弹窗占据视线中心，容易引发焦虑或干扰用户操作，为什么不用更温和、不会造成紧迫感的反馈方式？</h4>
+          <div class="criticality criticality-">高关键性</div>
           <div class="response-section">
             <strong>解决方案：</strong>
             <ul style="margin-left: 20px; margin-top: 10px;">
-              <li>在设计时仅考虑了ddl的紧迫性使在接近任务结束时选择了高紧迫感的反馈方式。在后续版本中将允许用户自定义提醒方式。</li>
+              <li>在设计时仅考虑了ddl的紧迫性使在接近任务结束时选择了高紧迫感的反馈方式。在后续版本中将允许用户自定义提醒方式。在一些可选地方式里将提醒方式视觉弱化：改成轻量的右上角气泡或底部滑入通知，减少对任务的遮挡。</li>
             </ul>
           </div>
         </li>
       </ul>
-        <ul class="problem-list">
-            <li class="problem-item">
-                <h4>问题：是否考虑过部分学生依赖即时通讯？为什么不允许用户在专注期间设置例外清单？</h4>
-                <div class="criticality criticality-medium">中关键性</div>
-                <div class="response-section">
-                    <strong>解决方案：</strong>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
-                        <li>平衡专注与社交在软件设计初期被设计者认为是矛盾的，但实际运营中发现这样的需求是巨大的。程序将会允许用户自定义极少量的白名单，允许定义部分重要联系人突破通知屏障。</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+
     </div>
   </section>
 
   <section>
     <h2>系统预期改进</h2>
-    <p>在成功解决上述问题后，我们的系统将得到显著提升：</p>
 
     <div class="improvement-section">
       <div class="improvement-card">
@@ -357,7 +358,7 @@
 
       <div class="improvement-card">
         <h4>功能点3：</h4>
-        <p>去除PVP性对比部分，系统将更倾向于用户的自我提升。</p>
+        <p>添加系统多套色彩体系和色彩应用，简化主副页面窗口，使用户需要突出的部分更加突出。</p>
       </div>
     </div>
   </section>
